@@ -10,6 +10,8 @@ namespace UniversityTasksOOP
     {
         private double _num1;
         private double _num2;
+        //private double _num3;
+
 
         public BasicCalculator(double num1, double num2)
         { 
@@ -39,24 +41,30 @@ namespace UniversityTasksOOP
         protected override double Mul(double num1, double num2)
         {
             Console.WriteLine("Mul operation successfully completed!");
+            //Console.WriteLine();
             return base.Mul(num1, num2);
         }
         protected override double Div(double num1, double num2)
         {
             Console.WriteLine("Div operation successfully completed!");
+            //Console.WriteLine();
             return base.Div(num1, num2);
         }
         protected override double Sub(double num1, double num2)
         {
             Console.WriteLine("Sub operation successfully completed!");
+            //Console.WriteLine();
             return base.Sub(num1, num2);
         }
         protected override double Sum(double num1, double num2)
         {
             Console.WriteLine("Sum operation successfully completed!");
+            //Console.WriteLine();
             return base.Sum(num1, num2);
+
         }
         protected override string GetCalcModel()
             => "Basic calc"; 
     }
+    
 }
